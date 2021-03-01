@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F9362C8-55B3-4E9D-AEDA-39B59BAFB9F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ClassScheduling.My.MyApplication</StartupObject>
+    <RootNamespace>ClassScheduling</RootNamespace>
+    <AssemblyName>ClassScheduling</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ClassScheduling.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ClassScheduling.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form\Dialog\FacultyAdd.Designer.vb">
+      <DependentUpon>FacultyAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Dialog\FacultyAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Dialog\FacultyUpdate.Designer.vb">
+      <DependentUpon>FacultyUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Dialog\FacultyUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Dialog\RoomAdd.Designer.vb">
+      <DependentUpon>RoomAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Dialog\RoomAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Dialog\RoomUpdate.Designer.vb">
+      <DependentUpon>RoomUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Dialog\RoomUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Dialog\ScheduleAdd.Designer.vb">
+      <DependentUpon>ScheduleAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Dialog\ScheduleAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Dialog\ScheduleUpdate.Designer.vb">
+      <DependentUpon>ScheduleUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Dialog\ScheduleUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Dialog\StrandAdd.Designer.vb">
+      <DependentUpon>StrandAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Dialog\StrandAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Dialog\SubjectAdd.Designer.vb">
+      <DependentUpon>SubjectAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Dialog\SubjectAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Dialog\SubjectUpdate.Designer.vb">
+      <DependentUpon>SubjectUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Dialog\SubjectUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Sub Form\FacultyManagement.Designer.vb">
+      <DependentUpon>FacultyManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Sub Form\FacultyManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Sub Form\RoomManagement.Designer.vb">
+      <DependentUpon>RoomManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Sub Form\RoomManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Sub Form\ScheduleManagement.Designer.vb">
+      <DependentUpon>ScheduleManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Sub Form\ScheduleManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Sub Form\StrandManagement.Designer.vb">
+      <DependentUpon>StrandManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Sub Form\StrandManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Sub Form\SubjectManagement.Designer.vb">
+      <DependentUpon>SubjectManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Sub Form\SubjectManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RePassword.Designer.vb">
+      <DependentUpon>RePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemCore.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\Dialog\FacultyAdd.resx">
+      <DependentUpon>FacultyAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Dialog\FacultyUpdate.resx">
+      <DependentUpon>FacultyUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Dialog\RoomAdd.resx">
+      <DependentUpon>RoomAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Dialog\RoomUpdate.resx">
+      <DependentUpon>RoomUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Dialog\ScheduleAdd.resx">
+      <DependentUpon>ScheduleAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Dialog\ScheduleUpdate.resx">
+      <DependentUpon>ScheduleUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Dialog\StrandAdd.resx">
+      <DependentUpon>StrandAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Dialog\SubjectAdd.resx">
+      <DependentUpon>SubjectAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Dialog\SubjectUpdate.resx">
+      <DependentUpon>SubjectUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Sub Form\FacultyManagement.resx">
+      <DependentUpon>FacultyManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Sub Form\RoomManagement.resx">
+      <DependentUpon>RoomManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Sub Form\ScheduleManagement.resx">
+      <DependentUpon>ScheduleManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Sub Form\StrandManagement.resx">
+      <DependentUpon>StrandManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Sub Form\SubjectManagement.resx">
+      <DependentUpon>SubjectManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RePassword.resx">
+      <DependentUpon>RePassword.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\room_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elective_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person_male_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diploma_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_25px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
